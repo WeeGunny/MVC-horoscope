@@ -28,10 +28,62 @@ public class DisplayMessageActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Intent intent= getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String StarSign = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = new TextView(this);
         textView.setTextSize(40);
-        textView.setText(message);
+        String horoscope;
+        if(StarSign.equals("aries")){
+          horoscope="rage dude";
+        }
+        else if(StarSign.equals("taurus")){
+            horoscope="bull";
+
+        }
+        else if(StarSign.equals("leo")){
+            horoscope="lion";
+
+        }
+        else if(StarSign.equals("gemini")){
+            horoscope="twinsies";
+
+        }
+        else if(StarSign.equals("cancer")){
+            horoscope="you've got crabs";
+
+        }
+        else if(StarSign.equals("virgo")){
+            horoscope="angel lady";
+
+        }
+        else if(StarSign.equals("libra")){
+            horoscope="What the hell is libra";
+
+        }
+        else if(StarSign.equals("scorpius")){
+            horoscope="I am the scorpian king!!!";
+
+        }
+        else if(StarSign.equals("sagittarius")){
+            horoscope="Horsie";
+
+        }
+        else if(StarSign.equals("capricorn")){
+            horoscope="*Goat Screams*";
+
+        }
+        else if(StarSign.equals("aquarius")){
+            horoscope="Unda da C";
+
+        }
+        else if(StarSign.equals("pisces")){
+            horoscope="Every body's doing the fish";
+
+        }
+        else{
+            horoscope="thats not a star sign ya dingus";
+        }
+
+        textView.setText(horoscope);
 
         RelativeLayout layout = (RelativeLayout) findViewById(R.id.content);
         layout.addView(textView);
