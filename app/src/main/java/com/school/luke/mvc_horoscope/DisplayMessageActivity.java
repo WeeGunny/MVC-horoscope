@@ -80,7 +80,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         }
         else{
-            horoscope="thats not a star sign ya dingus";
+            horoscope="that's not a star sign ya dingus";
         }
 
         textView.setText(horoscope);
