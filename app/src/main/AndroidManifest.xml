@@ -27,6 +27,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.school.luke.mvc_horoscope.MainActivity" />
         </activity>
+        <activity
+            android:name=".DisplayPisces"
+            android:label="@string/title_activity_display_pisces"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
