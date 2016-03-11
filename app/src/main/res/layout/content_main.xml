@@ -16,7 +16,8 @@
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/edit_message" />
+        android:hint="@string/edit_message"
+        android:text="Enter your starsign" />
 
     <ImageButton
         android:layout_width="75dp"
@@ -49,7 +50,7 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click a starsign for you horoscope"
+        android:text="Click a starsign for your horoscope"
         android:id="@+id/textView"
         android:layout_below="@+id/ImageButton"
         android:layout_alignParentLeft="true"
