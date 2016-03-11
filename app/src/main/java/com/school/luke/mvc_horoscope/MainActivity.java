@@ -10,10 +10,10 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,9 +54,55 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void SwitchToPisces (View view){
-        Intent intent = new Intent(this, DisplayPisces.class);
-        startActivity(intent);
-
-
+//        Intent intent = new Intent(this, DisplayPisces.class);
+//        startActivity(intent);
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Pisces - It's never too late to do that thing you always wanted to do. You know - the THING. The thing? You know.");
+    }
+    public void SwitchToAquarius (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Aquarius - Silver foil can make a good hat, it's true. However, it can also be used as a sheathe should you find yourself lucky one lunchtime");
+    }
+    public void SwitchToAries (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Aries - Having a box of tissues close to hand might become important over the coming minutes.");
+    }
+    public void SwitchToCancer (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Cancer - Walking to work in a clown costume can help you in your search for humility.\n");
+    }
+    public void SwitchToCapricorn (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Capricorn - The number you are thinking of is an odd number below 50");
+    }
+    public void SwitchToGemini (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Gemini - You are trapped in a cave with a panther and a sound system playing Michael Bolton's greatest hits. What do you do?");
+    }
+    public void SwitchToLeo (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Leo - Dressing as a feline may give others cause for concern today." +
+                "");
+    }
+    public void SwitchToLibra (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Libra - The future holds great peril for a masked magician in your area. Please phone your nearest masked magician and let him know.\n");
+    }
+    public void SwitchToSagittarius (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Sagittarius - Your ability to speak may be impaired today as you attempt to swallow half of a live hedgehog\n");
+    }
+    public void SwitchToScorpion (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Scorpio - Love makes the world go round, and peaches make a very nice accompaniment to sweetcorn");
+    }
+    public void SwitchToTaurus (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Taurus -As accurate as the weather report might be, you must be careful to avoid the 201 bus.");
+    }
+    public void SwitchToVirgo (View view){
+        TextView horoscope = (TextView)findViewById(R.id.textView);
+        horoscope.setText("Virgo - It's funny, all the other people I know like you died when they were very young");
     }
 }
+

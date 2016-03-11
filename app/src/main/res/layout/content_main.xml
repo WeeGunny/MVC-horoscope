@@ -45,5 +45,159 @@
         android:layout_toRightOf="@+id/edit_message"
         android:layout_toEndOf="@+id/edit_message" />
 
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click a starsign for you horoscope"
+        android:id="@+id/textView"
+        android:layout_below="@+id/ImageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="153dp" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton"
+        android:layout_gravity="center"
+        android:src="@drawable/aquarius"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToAquarius"
+        android:layout_above="@+id/textView"
+        android:layout_toRightOf="@+id/ImageButton"
+        android:layout_toEndOf="@+id/ImageButton" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton2"
+        android:layout_gravity="center"
+        android:src="@drawable/aries"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToAries"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton3"
+        android:layout_gravity="center"
+        android:src="@drawable/cancer"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToCancer"
+        android:layout_above="@+id/textView"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton4"
+        android:layout_gravity="center"
+        android:src="@drawable/virgo"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToVirgo"
+        android:layout_below="@+id/ImageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton5"
+        android:layout_gravity="center"
+        android:src="@drawable/gemini"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToGemini"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_alignEnd="@+id/imageButton3" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton6"
+        android:layout_gravity="center"
+        android:src="@drawable/scorpion"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToScorpion"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton2" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton7"
+        android:layout_gravity="center"
+        android:src="@drawable/sagittarius"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToSagittarius"
+        android:layout_alignTop="@+id/imageButton6"
+        android:layout_toLeftOf="@+id/imageButton6"
+        android:layout_toStartOf="@+id/imageButton6" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton8"
+        android:layout_gravity="center"
+        android:src="@drawable/taurus"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToTaurus"
+        android:layout_below="@+id/imageButton4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton9"
+        android:layout_gravity="center"
+        android:src="@drawable/leo"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToLeo"
+        android:layout_below="@+id/imageButton4"
+        android:layout_toLeftOf="@+id/imageButton6"
+        android:layout_toStartOf="@+id/imageButton6" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton10"
+        android:layout_gravity="center"
+        android:src="@drawable/libra"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToLibra"
+        android:layout_below="@+id/imageButton4"
+        android:layout_toLeftOf="@+id/imageButton5"
+        android:layout_toStartOf="@+id/imageButton5" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:src="@drawable/capricorn"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:onClick="SwitchToCapricorn"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/imageButton5"
+        android:layout_alignEnd="@+id/imageButton5" />
+
 
 </RelativeLayout>
